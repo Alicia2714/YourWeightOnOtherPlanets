@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <title>Your weight in other planet</title>
+</head>
+<body>
+    <div>
+    <h1>Your weight in other planet</h1>
+    <h2>On Earth your weight is different than on Mars or Jupiter</h2>
+    <script>
+    var g_Earth = 9.8;
+    var g_Mars = 3.7;
+    var g_Jupiter = 24.8;
+    var weight = parseInt(prompt("Input your weight: "));
+    var planet = parseInt(prompt("Select a planet:\n1 is for Mars, 2 is for Jupiter"));
+    var planet_name = "";
+
+    if(planet==1){
+        var Mars_Weight = parseInt(weight*g_Mars/g_Earth);
+        planet_name = "Mars";
+        document.write("<p>Your weight on "+planet_name+" is: <strong>"+weight+"</strong></p>");
+    }else if(planet==2){
+        var Jupiter_Weight = parseInt(weight*g_Jupiter/g_Earth);
+        planet_name = "Jupiter";
+        document.write("<p>Your weight on "+planet_name+" is: <strong>"+weight+"</strong></p>");
+    }else{
+        //planet = parseInt(prompt("That's not a Planet!!!\nTry again:\n1 is for Mars, 2 is for Jupiter"));
+        document.write("<p>That's NOT a planet!!!</p>");
+        planet_name = "Earth";
+        document.write("<p>Your weight on "+planet_name+" is: <strong>"+weight+"</strong></p>");
+    }
+    </script>
+    </div>
+</body>
+</html>
