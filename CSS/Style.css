@@ -1,0 +1,12 @@
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2016/06/23/16/07/background-1475670_960_720.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+div{
+    color: whitesmoke;
+    text-align: center;
+}
